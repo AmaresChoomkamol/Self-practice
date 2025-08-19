@@ -1,0 +1,77 @@
+สิ่งที่กำลังฝึกในโค้ดนี้
+
+1. วนลูป Array
+
+for (let i = 0; i < animal.length; i++) {...}
+
+while (i < animal.length - 1) {...}
+
+ฝึกวนลูปแบบ for และ while เข้าถึงค่าทีละตัวจาก array
+
+2. Array เก็บข้อมูลหลายประเภท 
+
+let arr = [true,false,2,3,"True",'False',{am : "SIUUUU"}]
+
+array ใน JS เก็บได้หมด ตัวเลข string boolean object JS ไม่บังคับชนิดข้อมูลเหมือนภาษาอื่น
+
+3. Array ซ้อน Array
+
+let arr2 = [1,2,3,4,arr]
+
+เก็บ array ไว้ในอีก array ได้ 
+
+4. ใช้คำสั่งจัดการ array
+
+arr.push("OK")           // เพิ่มท้าย
+arr.splice(2,4)          // ลบออก 4 ตัวจาก index 2
+delete arr[2]            // ลบแบบเว้นที่ว่างไว้
+
+5. เช็คประเภทว่าเป็น array ไหม
+
+console.log(nums instanceof Array); // true 
+ตรวจสอบว่า object ที่เราทำงานด้วย เป็น array จริงๆ ไหม
+
+6. Array ที่เก็บ object
+
+const colors = [{id:1, name:'red'}, ...]
+array ในแต่ละช่องเก็บ object เข้าถึงข้อมูลแบบ colors[1].name 
+
+7. Array ที่เก็บ object ซึ่งมี array ซ้อนอยู่
+
+const contacts = [{email: [...]}, {address: [...]}]
+
+ลึกขึ้น object ซ้อน array ซ้อน object ฝึกเข้าถึงข้อมูลแบบหลายชั้น เช่น contacts[0].email[1]
+
+8. Array ซ้อน array
+
+const groups=[['Malee', 'Jane'], ['John', 'Jay', 'Pete']]
+ใช้ loop วิ่งเข้าไปดึงชื่อสุดท้ายของแต่ละกลุ่ม
+
+9. Spread Operator กับ array
+
+let b = [0, ...a, 4]
+let d = [...c]
+
+ใช้ ... กระจายค่าภายใน array ออกมา 
+
+10. แปลง string เป็น array ด้วย spread
+
+const greeting = "hello world"
+const greetingCh = [...greeting]
+
+ใช้ spread กับ string ได้ array ที่แต่ละตัวคือตัวอักษร
+
+11. สร้าง array เปล่า
+
+let a = new Array(10)
+ได้ array ที่มีขนาด 10 แต่ไม่มีค่าข้างใน
+
+12. Array.of()
+
+let b = Array.of(21,1,2,3,4,"True")
+ใช้สร้าง array จากค่าที่ให้เข้าไป ต่างจาก new Array(5) ที่จะได้ array ขนาด 5 ยังไม่มีค่า
+
+13. Array.from()
+
+const arr5 = Array.from(str)
+แปลงของที่เป็น iterable (เช่น string) ให้เป็น array ได้เลย

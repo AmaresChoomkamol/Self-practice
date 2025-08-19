@@ -1,0 +1,53 @@
+สิ่งที่กำลังฝึกในโค้ดนี้
+1. การสร้าง Object
+
+ลองสร้าง object ธรรมดาๆ ที่มีข้อมูลอยู่ข้างใน เช่น ชื่อสัตว์ ชื่อหนังสือ ใส่ method เข้าไปใน object แล้วใช้ this เพื่ออ้างถึงของในตัวมันเอง
+
+2. การเพิ่มและลบ property
+
+ลองลบ method ออกจาก object ด้วย delete ลองเพิ่ม property ใหม่เข้าไป 
+
+3. object ที่ซับซ้อน
+
+มี array อยู่ใน object มี object ซ้อนใน object อีกรอบ เรียกข้อมูลออกมา เช่น composite.Call() หรือเข้าถึง composite.Full[0].id
+
+4. การซ้ำชื่อ key
+
+let obj1 = {
+    name: "John",
+    name: "Somchai",
+    name: "Smith",
+    name: "Jack"
+}
+
+สุดท้ายค่าที่เก็บจริงคืออันสุดท้าย Jack เพราะ key ซ้ำกันมันจะเขียนทับ
+
+5. Constructor Function
+
+ใช้ function สร้าง object แบบ เช่น function Book(...) แล้วใช้ new เพื่อสร้าง object จาก function 
+
+6. ใช้ class
+
+ใช้ class ทำให้เป็นระเบียบ มี method เช่น getISBN() setTitle() getBookInfo()
+
+7. Object.create()
+
+สร้าง object โดยใช้ object เดิมเป็นต้นแบบ 
+
+8. เปรียบเทียบ Object
+
+ลองเทียบ object 2 ตัวดูว่าเหมือนกันไหม แบบ === กับ Object.is() จะดูว่าเป็นตัวเดียวกันในหน่วยความจำมั้ย แค่หน้าตาเหมือน ไม่พอ
+เปรียบเทียบค่าภายในมีแบบใช้ function เอง เช่น compare(obj1, obj2)
+
+9. ใช้ Object.keys() กับ Object.values()
+
+ดึงชื่อ key ทั้งหมด กับค่าทั้งหมดออกมาเป็น array เอาไว้ดูว่ามีอะไรอยู่ใน object บ้าง
+
+10. Destructuring 
+
+เช่น const {title} = book 
+const [, secondColor] = colors
+
+11. Shallow Equality
+
+เขียน function เทียบ object ว่ามี key และ value เหมือนกันมั้ย ถ้าข้างในซับซ้อน object ซ้อน object function นี้จะไม่เช็คลึกถึงในนั้น

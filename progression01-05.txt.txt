@@ -1,0 +1,21 @@
+Week 1
+
+ฝึกเขียน JavaScript Array 
+การ loop
+การเพิ่ม ลบข้อมูล
+การใช้ method ต่างๆ
+การจัดการ array ซ้อนกัน
+การแปลงค่าระหว่าง string กับ array
+การใช้ spread operator
+สร้าง array แบบต่างๆ Array.of Array.from new Array()
+
+Week 2
+
+ฝึกเขียน JavaScript object 
+สร้าง object
+ใช้ method
+เปรียบเทียบ object
+ใช้ class
+clone object
+destructuring
+shallow equality
