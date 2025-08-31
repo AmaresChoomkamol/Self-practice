@@ -19,3 +19,27 @@ Week 2
 clone object
 destructuring
 shallow equality
+
+Week 3
+
+ฝึกเขียน JavaScript Function
+รูปแบบ function declaration expression arrow function
+ส่ง function เป็น argument
+return function จาก function
+ใช้ default parameter
+ใช้ rest parameter และ arguments
+ใช้ spread operator
+destructuring 
+
+Week 4
+
+ฝึกใช้ Anonymous Function และ Callback
+ใช้ filter() คัดข้อมูลจาก array
+ใช้ map() แปลงค่าทุกตัวใน array
+ใช้ forEach() ทำงานกับทุก element ใน array
+ใช้ sort() เรียงลำดับ เปลี่ยนค่าเดิมใน array
+ใช้ reduce() รวมค่าหรือเปลี่ยนข้อมูลใน array ให้เป็นค่าเดียว
+ฝึกการใช้ includes() some() ตรวจสอบเงื่อนไขใน array string
+การจัดการ array ด้วย slice() splice() fill()
+แปลง string เป็นตัวใหญ่ทั้งหมดด้วย toUpperCase() ผ่าน forEach()
+สร้าง function แยกไว้ใช้ซ้ำกับ filter() callback แบบมีชื่อ

@@ -1,0 +1,58 @@
+1. Anonymous Function
+
+ใช้ function แบบไม่ระบุชื่อ เช่น การใช้ function ใน filter() map() forEach() โดยตรง เช่น
+words.filter(word => word.length > 6)
+
+2. Callback Function
+
+function ที่ใช้เป็น argument ใน function อื่น เช่น
+const wordLength = (word) => word.length <= 6;
+const shortWords = words.filter(wordLength);
+
+3. Array Methods
+
+filter() คัดกรองข้อมูลจาก array โดยไม่เปลี่ยนแปลงค่าเดิม เช่น
+const shortWords = words.filter(wordLength)
+
+map() แปลงค่าทุกตัวใน array เช่น การแปลง array ของคำให้เป็นตัวพิมพ์ใหญ่ทั้งหมด
+let uppercaseWords = words.map(word => word.toUpperCase());
+
+forEach() ทำงานกับทุกๆ element ของ array เช่น
+words.forEach((word) => console.log(word))
+
+4. Array Manipulation
+
+sort() ใช้สำหรับการเรียงลำดับข้อมูลใน array แต่จะเปลี่ยนแปลงค่าเดิมของ array
+words.sort()
+
+slice() สร้าง array ใหม่จากข้อมูลที่เลือก
+let ans1 = words.slice(2);
+let ans2 = words.slice(0, 3);
+
+splice() แก้ไข array โดยการเพิ่ม ลบ แทนที่ข้อมูลที่ตำแหน่ง
+words.splice(2, 1, 'banana');
+
+fill() เติมค่าทั้งหมดใน array ด้วยค่าที่กำหนด
+words.fill(null)
+
+5. reduce()
+
+ใช้สำหรับรวมค่าหรือคำนวณข้อมูลใน array เช่น หาผลรวมทั้งหมดใน cart
+
+let totalCart = cart.reduce((total, item) => {
+    total.total += item.price * item.quantity;
+    return total;
+}, {total: 0});
+
+6. ตรวจสอบค่าใน array หรือ string
+
+includes() ตรวจสอบว่า array หรือ string มีค่าที่เราต้องการหรือไม่
+
+words.includes("apple");  // false
+const sentence = "The quick brown fox";
+sentence.includes("fox");  // true
+
+some() ใช้ตรวจสอบว่า array มีค่าที่ตรงกับเงื่อนไขที่เรากำหนดหรือไม่
+
+const hasApple = words.some(word => word.toLowerCase().includes("apple"));
+console.log(hasApple ? "has apple" : "does not have apple");
