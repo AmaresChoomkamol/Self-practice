@@ -43,3 +43,18 @@ Week 4
 การจัดการ array ด้วย slice() splice() fill()
 แปลง string เป็นตัวใหญ่ทั้งหมดด้วย toUpperCase() ผ่าน forEach()
 สร้าง function แยกไว้ใช้ซ้ำกับ filter() callback แบบมีชื่อ
+
+Week 5
+
+ฝึกใช้ filter() และ map() ร่วมกัน
+ใช้ for of loop กับเงื่อนไขในการกรองข้อมูล
+ใช้ concat() รวม array 2 ชุดเข้าด้วยกัน
+ใช้ toString() แปลง array เป็น string
+เรียงลำดับข้อมูลใน array ด้วย sort()
+เรียงตัวเลขแบบ numeric โดยใช้ callback (a,b) => a - b
+เรียงชื่อใน array ของ object ด้วย localeCompare()
+ใช้ join() รวมค่าทั้งหมดใน array เป็น string
+ใช้ indexOf() หาค่าภายใน array โดยระบุตำแหน่งเริ่มต้น
+CommonJS ใช้ require() เพื่อ import 
+ES Modules ใช้ import export แบบ named และ default
+เปลี่ยนชื่อ function ตอน import ด้วย as

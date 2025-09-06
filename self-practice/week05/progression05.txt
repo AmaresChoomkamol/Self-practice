@@ -1,0 +1,49 @@
+1. Array Method filter() และ map()
+
+กรองรายชื่อนักเรียนที่สอบผ่าน และแปลงชื่อให้เป็นตัวพิมพ์ใหญ่ทั้งหมด
+
+const passingNames = studentScores
+  .filter(student => student.score >= 70)
+  .map(student => student.name.toUpperCase());
+
+2. Loop + Condition (แบบ for...of)
+
+ใช้งาน for of เพื่อกรองข้อมูลและแปลงชื่อเป็นพิมพ์ใหญ่
+
+for (const i of obj) {
+  if (i.score >= 70) {
+    Newarr.push(i.name.toUpperCase());
+  }
+}
+
+3. Array Sorting
+
+ใช้ sort() สำหรับเรียงลำดับตัวเลขแบบ numeric
+
+array14.sort((a, b) => a - b); // [1, 4, 21, 30, 10000]
+
+ใช้ localeCompare() สำหรับเรียงลำดับ string (ตามชื่อ)
+
+stds.sort((a, b) => a.name.localeCompare(b.name));
+
+4. Array Methods: join(), indexOf()
+
+join(' ') รวมค่าทั้งหมดใน array เป็น string 
+indexOf(value, fromIndex) หา index ของค่าที่ต้องการ เริ่มจากตำแหน่งที่ระบุ
+
+arrayy.join(' ');        // "10 20 30 40 50"
+arrayy.indexOf(30, 4);   // หา 30 ตั้งแต่ index 4 เป็นต้นไป → -1
+
+5. CommonJS
+
+ใช้กับ Node.js แบบเดิม
+
+const { echo, getLength, MAXStudent } = require("./utility.js");
+
+6. ES Module
+
+ใช้ใน browser
+
+import strLength, { Book, echo as Repeat, VAT } from "./utility.js";
+
+เปลี่ยนชื่อ echo เป็น Repeat ด้วย as
